@@ -4,7 +4,6 @@
 mv translations/zh_cn translations/zh
 
 # Create a directory for api (locale)
-# rm -rf locale
 mkdir locale
 
 # Copy all subdirectories to locale
@@ -21,10 +20,8 @@ for d in */ ; do
 done
 
 cd ..
-# echo $(pwd)
 
 # Create a directory for ui (locales)
-# rm -rf locales
 mkdir locales
 
 # Copy all subdirectories to locales
@@ -38,12 +35,6 @@ for d in */ ; do
 done
 
 cd .. 
-
-# echo $pwd
-
-# cd to repository
-
-# cd _clones/
 
 awx_api_path="awx/locale" # locale will be dropped here
 awx_ui_path="awx/ui/src/locales" # locales will be dropped here
